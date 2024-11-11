@@ -1,5 +1,7 @@
 package tictactoe;
 
+import java.util.Scanner;
+
 /**
  * @brief La scacchiera del gioco.
  * @invariant
@@ -15,7 +17,12 @@ public class Board {
     /**
      * @brief Costante usata per indicare che una cella è vuota.
      */
-    public static final int CELL_NONE=0;
+    public static final int CELL_NONE=1;
+
+    private Scanner scanner = new Scanner(System.in);
+
+    /* MODIFICA CON HISTORY APERTA*/
+
     /**
      * @brief Costante usata per indicare che una cella contiene
      *        il mark X.
